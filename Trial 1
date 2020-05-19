@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompt Gen</title>
+</head>
+<body>  
+  <h1>A Most Simple Prompt Generator</h1>
+  <div id="promptDisplay">
+    <!-- Where the prompts go -->
+  </div>
+  <button onclick="newPrompt()">New Prompt</button>
+  
+  <script src="javascript"></script>
+
+</body>
+</html>

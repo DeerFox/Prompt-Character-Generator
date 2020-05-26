@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompt Gen</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+</style>
+<body>
+<h1>A simple prompt generator</h1>
+
+<div id="promptDisplay"></div>
+
+<button onclick="newPrompt()">New Prompt</button>
+
+<h2>
+Use this button for alternating Modes
+</h2>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+	function myFunction() {
+  	var element = document.body;
+    element.classList.toggle("dark-mode")
+  }
+</script>
+
+</body>
+</html>
+
+
+Javascript
+
+var prompts = [
+"The child was stuck in a land thought long gone",
+"The food wasn't good it was great", 
+"People are born apathetic and have to buy emotions in order to have them",   
+'A child is stuck in a tree but does not want to come down',
+'A race long thought lost is discovered to be okay and thriving',
+'Your character is writing a book, and needs inspiration for the ending'
+] 
+
+function newPrompt() {
+var randomNumber = Math.floor(Math.random() * (prompts.length));
+document.getElementById('promptDisplay').innerHTML = prompts[randomNumber];
+
+}

@@ -1,1 +1,1 @@
-# Prompt-Character-Generator
+# Prompt-Generator
